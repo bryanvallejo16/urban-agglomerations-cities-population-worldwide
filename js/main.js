@@ -105,9 +105,7 @@ info.update = function (props) {
     this._div.innerHTML = '<h3> 👨‍👩‍👧‍👦 - Cities and Population -</h3>' +  (props ?
          '<b>'+props.City_name +'</b>'+ ' 🌆' +'<br/>' + props.a2020 + ' Inhabitants in 2020'
         : 
-	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!'+'<br/>'+
-	  '® GisliMapping Geoanalytics' + '<br/>' + 
-	  'If needed the shapefile contact bryanvallejo16@gmail.com'  );
+	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!' );
 };
 
 info.addTo(map);
