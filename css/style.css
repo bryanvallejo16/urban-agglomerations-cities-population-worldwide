@@ -13,7 +13,7 @@ h1{
 body{
 	width: 100%;
 	height: 100%;
-	margin: 5px;
+	margin: 0px;
 	font-family: "Helvetica Neue", Arial, Helveticam sans-serif;
 }
 
@@ -55,9 +55,9 @@ body{
 }
 
 #map {
-	height:98%;
-	width:98%;
-	left:1%;
+	height:100%;
+	width:100%;
+	left:0%;
 	overflow:hidden;
 	position:fixed;
 	border:1px #444 solid;
