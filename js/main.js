@@ -6,14 +6,11 @@ var esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Wor
 var esridark = L.esri.basemapLayer('DarkGray',{attribution: '® GisliMapping Geoanalytics'});
 var esrigray = L.esri.basemapLayer('Gray',{attribution: '® GisliMapping Geoanalytics'});
 
-//osm.addTo(map);
-//esri.addTo(map);
 esridark.addTo(map)
 
 var basemaps={
   'DarkGray': esridark,
   'Satellite': esri,
-	/*'LightGray': esrigray,*/
 	'OSM': osm
 }
 
