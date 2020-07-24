@@ -108,8 +108,7 @@ info.update = function (props) {
 	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!'+'<br/>'+
 	  'This data comes from United Nations'+'<br/>'+
 	  'and ® GisliMapping Geoanalytics. ' + '<br/>' + 
-	  'If want the shapefile of cities contact bryanvallejo16@gmail.com'	
-									       );
+	  'If needed the shapefile of cities contact bryanvallejo16@gmail.com'  );
 };
 
 info.addTo(map);
