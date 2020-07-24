@@ -104,8 +104,8 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = '<h3> 👨‍👩‍👧‍👦 - Cities and Population -</h3>' +  (props ?
          '<b>'+props.City_name +'</b>'+ ' 🌆' +'<br/>' + props.a2020 + ' Inhabitants in 2020'
-        : 'Coloca el mouse sobre el mapa para ver datos.'+'<br/>'+'¡Prueba haciendo click en las ciudades!'+'<br/>'
-	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!'+'<br/>'
+        : 'Coloca el mouse sobre el mapa para ver datos.'+'<br/>'+'¡Prueba haciendo click en las ciudades!'+'<br/>'+
+	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!'+'<br/>'+
 	  'This data comes from United Nations'+'<br/>'+
 	  'and ® GisliMapping Geoanalytics. ' + '<br/>' + 
 	  'If want the shapefile of cities contact bryanvallejo16@gmail.com'	
