@@ -3,7 +3,7 @@ var map=L.map('map').setView([20, 30], 3);
 
 var osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'Open Street Maps | ® GisLiMapping Geoanalytics'});
 var esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community | ® GisLiMapping Geoanalytics',maxZoom: 18});
-var esridark = L.esri.basemapLayer('DarkGray',{attribution: '® GisliMapping Geoanalytics'});
+var esridark = L.esri.basemapLayer('DarkGray',{attribution: '® GisLiMapping Geoanalytics'});
 var esrigray = L.esri.basemapLayer('Gray',{attribution: '® GisLiMapping Geoanalytics'});
 
 esridark.addTo(map)
@@ -104,10 +104,9 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = '<h3> 👨‍👩‍👧‍👦 - Cities and Population -</h3>' +  (props ?
          '<b>'+props.City_name +'</b>'+ ' 🌆' +'<br/>' + props.a2020 + ' Inhabitants in 2020'
-        : 'Coloca el mouse sobre el mapa para ver datos.'+'<br/>'+'¡Prueba haciendo click en las ciudades!'+'<br/>'+
-	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!'+'<br/>'+
-	  'This data comes from United Nations'+'<br/>'+
-	  'and ® GisliMapping Geoanalytics. ' + '<br/>' + 
+        : 
+	  'Hover the mouse over the map to see data.'+'<br/>'+'¡Try clicking over the cities!'+'<br/>'+'<br/>'+
+	  'Data source is United Nations and ® GisliMapping Geoanalytics.' + '<br/>' + 
 	  'If needed the shapefile of cities contact bryanvallejo16@gmail.com'  );
 };
 
